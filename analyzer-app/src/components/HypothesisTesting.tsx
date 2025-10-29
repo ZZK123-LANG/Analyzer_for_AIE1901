@@ -185,7 +185,7 @@ const HypothesisTesting: React.FC<HypothesisTestingProps> = ({ data }) => {
                           <CloseCircleOutlined style={{ color: '#f92672' }} /> :
                           <CheckCircleOutlined style={{ color: '#a6e22e' }} />
                         }
-                        <Text style={{ color: '#f8f8f2', fontWeight: 'bold' }}>
+                        <Text style={{ color: '#000000', fontWeight: 'bold' }}>
                           {testResult.rejectNull ?
                             `${t('hypothesis.rejectNull')} (p < ${significanceLevel})` :
                             `${t('hypothesis.failToRejectNull')} (p ≥ ${significanceLevel})`

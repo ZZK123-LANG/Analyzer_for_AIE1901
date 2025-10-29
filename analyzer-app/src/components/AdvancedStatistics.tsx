@@ -286,7 +286,7 @@ const AdvancedStatistics: React.FC<AdvancedStatisticsProps> = ({ analysisResult 
                           <CloseCircleOutlined style={{ color: '#f92672' }} /> :
                           <CheckCircleOutlined style={{ color: '#a6e22e' }} />
                         }
-                        <Text style={{ color: '#f8f8f2' }}>
+                        <Text style={{ color: '#000000' }}>
                           {distributionAnalysis?.skewness?.isSignificant ?
                             t('advanced.significant') :
                             t('advanced.notSignificant')
@@ -355,7 +355,7 @@ const AdvancedStatistics: React.FC<AdvancedStatisticsProps> = ({ analysisResult 
                           <CloseCircleOutlined style={{ color: '#f92672' }} /> :
                           <CheckCircleOutlined style={{ color: '#a6e22e' }} />
                         }
-                        <Text style={{ color: '#f8f8f2' }}>
+                        <Text style={{ color: '#000000' }}>
                           {distributionAnalysis?.kurtosis?.isSignificant ?
                             t('advanced.kurtosisSignificant') :
                             t('advanced.kurtosisNotSignificant')
@@ -413,7 +413,7 @@ const AdvancedStatistics: React.FC<AdvancedStatisticsProps> = ({ analysisResult 
                           <CheckCircleOutlined style={{ color: '#a6e22e' }} /> :
                           <CloseCircleOutlined style={{ color: '#f92672' }} />
                         }
-                        <Text style={{ color: '#f8f8f2' }}>
+                        <Text style={{ color: '#000000' }}>
                           {distributionAnalysis?.normalityTests?.jarqueBera?.isNormal ?
                             t('advanced.normalDist') :
                             t('advanced.notNormalDist')
@@ -469,7 +469,7 @@ const AdvancedStatistics: React.FC<AdvancedStatisticsProps> = ({ analysisResult 
                           <CheckCircleOutlined style={{ color: '#a6e22e' }} /> :
                           <CloseCircleOutlined style={{ color: '#f92672' }} />
                         }
-                        <Text style={{ color: '#f8f8f2' }}>
+                        <Text style={{ color: '#000000' }}>
                           {distributionAnalysis?.normalityTests?.shapiroWilk?.isNormal ?
                             t('advanced.normalDist') :
                             t('advanced.notNormalDist')

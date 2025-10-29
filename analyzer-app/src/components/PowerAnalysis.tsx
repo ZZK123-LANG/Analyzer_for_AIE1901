@@ -220,16 +220,16 @@ const PowerAnalysis: React.FC<PowerAnalysisProps> = ({ data }) => {
           <Alert
             message={
               <Space direction="vertical">
-                <Text style={{ color: '#f8f8f2' }}>
+                <Text style={{ color: '#000000' }}>
                   {t('power.powerAnalysisResult')}
                 </Text>
-                <Text style={{ color: '#c8c8c2' }}>
+                <Text style={{ color: '#000000' }}>
                   • {t('power.currentPower', { power: (powerResult.power * 100).toFixed(2) })}
                 </Text>
-                <Text style={{ color: '#c8c8c2' }}>
+                <Text style={{ color: '#000000' }}>
                   • {t('power.rejectProb', { power: (powerResult.power * 100).toFixed(2) })}
                 </Text>
-                <Text style={{ color: '#c8c8c2' }}>
+                <Text style={{ color: '#000000' }}>
                   • {t('power.powerDesc', { alpha, alt: getAlternativeText(alternative) })}
                 </Text>
               </Space>
@@ -402,16 +402,16 @@ const PowerAnalysis: React.FC<PowerAnalysisProps> = ({ data }) => {
           <Alert
             message={
               <Space direction="vertical">
-                <Text style={{ color: '#f8f8f2' }}>
+                <Text style={{ color: '#000000' }}>
                   {t('power.sampleSizeResultDesc')}
                 </Text>
-                <Text style={{ color: '#c8c8c2' }}>
+                <Text style={{ color: '#000000' }}>
                   • {t('power.reachPower', { power: (sampleSizeResult.power * 100).toFixed(0), alpha })}
                 </Text>
-                <Text style={{ color: '#c8c8c2' }}>
+                <Text style={{ color: '#000000' }}>
                   • {t('power.detectEffect', { effect: sampleSizeResult.effectSize?.toFixed(3) || 'N/A' })}
                 </Text>
-                <Text style={{ color: '#c8c8c2' }}>
+                <Text style={{ color: '#000000' }}>
                   • {t('power.minSampleSize', { size: 'sampleSize' in sampleSizeResult ? sampleSizeResult.sampleSize : sampleSizeResult.sampleSizePerGroup })}
                 </Text>
               </Space>

@@ -233,19 +233,19 @@ const DataInputSection: React.FC<DataInputSectionProps> = ({
 
           <Alert
             message={
-              <Space>
-                <Text strong style={{ color: '#e6db74' }}>{t('data.useHint')}</Text>
-              </Space>
-            }
-            description={t('data.useHintDesc')}
+                <Space>
+                  <Text strong style={{ color: '#e6db74' }}>{t('data.useHint')}</Text>
+                </Space>
+              }
+            description={<Text style={{ color: '#000000' }}>{t('data.useHintDesc')}</Text>}
             type="info"
             showIcon
           />
 
           {data.length > 0 && (
             <Alert
-              message={t('data.generateSuccess')}
-              description={t('data.pointsGenerated', { count: data.length })}
+              message={<Text style={{ color: '#000000' }}>{t('data.generateSuccess')}</Text>}
+              description={<Text style={{ color: '#000000' }}>{t('data.pointsGenerated', { count: data.length })}</Text>}
               type="success"
               showIcon
             />
@@ -340,7 +340,7 @@ const DataInputSection: React.FC<DataInputSectionProps> = ({
               }
               description={
                 <Space direction="vertical">
-                  <Text>{t('data.generatedHighQuality', { count: data.length })}</Text>
+                  <Text style={{ color: '#000000' }}>{t('data.generatedHighQuality', { count: data.length })}</Text>
                   <Space size="large">
                     <Text style={{ color: '#75715e' }}>✓ {t('data.fitScore')}</Text>
                     <Text style={{ color: '#75715e' }}>✓ {t('data.dataQuality')}</Text>

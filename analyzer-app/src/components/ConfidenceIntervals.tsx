@@ -67,7 +67,7 @@ const ConfidenceIntervals: React.FC<ConfidenceIntervalsProps> = ({ data, analysi
           <Alert
             message={
               <Space direction="vertical">
-                <Text style={{ color: '#f8f8f2' }}>
+                <Text style={{ color: '#000000' }}>
                   {t('confidence.meanCI95', { level: (confidenceLevel * 100).toFixed(0) })}:
                 </Text>
                 <Tag color="blue" style={{ fontSize: '14px' }}>
@@ -109,7 +109,7 @@ const ConfidenceIntervals: React.FC<ConfidenceIntervalsProps> = ({ data, analysi
           <Alert
             message={
               <Space direction="vertical">
-                <Text style={{ color: '#f8f8f2' }}>
+                <Text style={{ color: '#000000' }}>
                   {t('confidence.varianceCI95', { level: (confidenceLevel * 100).toFixed(0) })}:
                 </Text>
                 <Tag color="purple" style={{ fontSize: '14px' }}>
@@ -195,7 +195,7 @@ const ConfidenceIntervals: React.FC<ConfidenceIntervalsProps> = ({ data, analysi
           <Alert
             message={
               <Space direction="vertical">
-                <Text style={{ color: '#f8f8f2' }}>
+                <Text style={{ color: '#000000' }}>
                   {t('confidence.meanDiffCI', { 
                     level: (confidenceLevel * 100).toFixed(0),
                     method: twoSampleCI.method 
@@ -274,7 +274,7 @@ const ConfidenceIntervals: React.FC<ConfidenceIntervalsProps> = ({ data, analysi
           <Alert
             message={
               <Space direction="vertical">
-                <Text style={{ color: '#f8f8f2' }}>
+                <Text style={{ color: '#000000' }}>
                   {t('confidence.pairedDiffCI', { level: (confidenceLevel * 100).toFixed(0) })}:
                 </Text>
                 <Tag color="cyan" style={{ fontSize: '14px' }}>
@@ -341,7 +341,7 @@ const ConfidenceIntervals: React.FC<ConfidenceIntervalsProps> = ({ data, analysi
           <Alert
             message={
               <Space direction="vertical">
-                <Text style={{ color: '#f8f8f2' }}>
+                <Text style={{ color: '#000000' }}>
                   {t('confidence.proportionDiffCI', { level: (confidenceLevel * 100).toFixed(0) })}:
                 </Text>
                 <Tag color="orange" style={{ fontSize: '14px' }}>
